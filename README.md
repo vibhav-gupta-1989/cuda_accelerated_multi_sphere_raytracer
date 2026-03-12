@@ -1,2 +1,5 @@
-Developed CUDA accelerated Ray Tracer using GeForce RTX 3050 Laptop GPU for a scene consisting of three spheres (red, green and blue) and sky gradient background. 
-Obtained a speedup of ~90x with respect to CPU implementation.
+- Implemented a GPU-accelerated ray tracer in C++/CUDA rendering 1000 spheres at 800×400 resolution.
+- Built Bounding Volume Hierarchy (BVH) acceleration using Axis-Aligned Bounding Boxes to reduce ray–object intersection tests.
+- Implemented parallel GPU ray traversal using CUDA kernels with 2-D thread blocks.
+- Compared CPU vs GPU BVH traversal performance, achieving 770x speedup through massive parallelism.
+- Implemented custom ray–sphere and AABB intersection algorithms and generated rendered images in PPM format.
